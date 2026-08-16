@@ -285,14 +285,26 @@ exactly what the story on the first slide was hiding.
 
 <!-- Act 3 / BUILD -->
 
-# From Your Code to a Transistor: The Abstraction Stack
+# The Abstraction Stack: What Software Sees (1/2)
 
-<div class="thread">One definition, six concrete layers. This is the map for the whole semester.</div>
+<div class="thread">One definition, six concrete layers. Here is the top half: what a programmer sees.</div>
 
 <div class="stack">
 <div class="layer view"><span class="h">Application</span> <span class="s">the video editor, the game, the app you actually use</span></div>
 <div class="layer view"><span class="h">Operating System</span> <span class="s">schedules programs, manages memory and devices</span></div>
 <div class="layer logical"><span class="h">Instruction Set Architecture</span> <span class="s">the fixed vocabulary of instructions: this course's Weeks 3-5</span></div>
+</div>
+
+Everything above the ISA line is software's problem. Everything below
+it is this course's problem.
+
+---
+
+# The Abstraction Stack: How It's Built (2/2)
+
+<div class="thread">The bottom half: how one ISA actually gets implemented in silicon.</div>
+
+<div class="stack">
 <div class="layer logical"><span class="h">Microarchitecture</span> <span class="s">the datapath and pipeline that execute those instructions: Weeks 6-10</span></div>
 <div class="layer physical"><span class="h">Logic Gates</span> <span class="s">AND, OR, adders, registers, built from your Digital Logic course</span></div>
 <div class="layer physical"><span class="h">Transistors</span> <span class="s">the physical devices switching on and off, billions per chip</span></div>
