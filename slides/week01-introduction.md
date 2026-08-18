@@ -271,7 +271,8 @@ at whatever scale you work.
 
 # Coming Up Next: Worksheet Part A
 
-Next session, you will work in pairs on **Worksheet Part A**.
+Next session, you will work in pairs on
+**[Worksheet Part A](materials/week01/worksheet.html)**.
 
 - You will see two real-looking laptop spec sheets, like the SmartPick story
 - Your pair predicts: which laptop is actually faster, and why
@@ -427,7 +428,7 @@ cannot put an exact number on the gap — that is Week 2's job.
 # Try It: Worksheet Part A
 
 <div class="why">
-Pair up. Open <strong>Worksheet Part A</strong>. You will see two full
+Pair up. Open <strong><a href="materials/week01/worksheet.html">Worksheet Part A</a></strong>. You will see two full
 spec sheets and predict which laptop is faster, and why. About 15
 minutes.
 </div>
@@ -468,7 +469,7 @@ reading" box on the handout.
 # Try It: Worksheet Part B
 
 <div class="why">
-Same pairs. Open <strong>Worksheet Part B</strong>. Check your Part A
+Same pairs. Open <strong><a href="materials/week01/worksheet.html">Worksheet Part B</a></strong>. Check your Part A
 prediction against the real answer, then answer two new questions. About
 15 minutes.
 </div>
@@ -520,7 +521,7 @@ Every later week zooms into one stage of this picture.
 2. Put these in order, from your code to the physical chip: microarchitecture, application, transistors, ISA, logic gates
 
 <div class="why">
-After this, take the short self-check quiz (paper or online) for more
+After this, take the short <a href="materials/week01/quiz.html">self-check quiz</a> for more
 practice. It is ungraded.
 </div>
 
@@ -566,6 +567,7 @@ numbers, not a stopwatch.
 - Around 2004, chip speed hit a wall, so the field moved to multicore. That is this course's final major topic
 - **You did today:** warm-up quiz, Worksheet Parts A and B, self-check quiz
 - **Reading:** Hennessy & Patterson, 6th ed., Chapter 1
+- **Handout:** [materials/week01/handout.md](materials/week01/handout.html), glossary and the full SmartPick walkthrough
 - **Prepare:** find one real spec sheet (laptop or phone). Bring one number you cannot yet fully explain
 
 ---

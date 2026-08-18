@@ -19,6 +19,9 @@
   .wk{font-family:Cambria,Georgia,'Noto Serif KR',serif;color:var(--brand);font-weight:700;min-width:3.2rem;}
   li.upcoming .wk{color:#A8B2BB;}
   .fmt{font-size:.78rem;color:#5B6B78;background:var(--pale);padding:.2rem .55rem;border-radius:12px;white-space:nowrap;}
+  .materials-row{display:flex;gap:.5rem;margin:.4rem 0 0;flex-wrap:wrap;}
+  .materials-row a{font-size:.78rem;color:var(--brand);text-decoration:none;background:var(--pale);padding:.2rem .6rem;border-radius:10px;}
+  .materials-row a:hover{text-decoration:underline;}
   footer{max-width:820px;margin:0 auto;padding:0 1.5rem 3rem;color:#5B6B78;font-size:.85rem;}
 </style>
 </head>
@@ -29,7 +32,9 @@
 </header>
 <main>
 <ul>
-<li><a href="week01-introduction.html"><span class="wk">01</span> Introduction</a></li>
+<li><a href="week01-introduction.html"><span class="wk">01</span> Introduction</a>
+<div class="materials-row"><a href="materials/week01/handout.html">📄 Handout</a><a href="materials/week01/worksheet.html">📝 Worksheet</a><a href="materials/week01/quiz.html">✅ Quiz</a></div>
+</li>
 <li class="upcoming"><span class="wk">02</span> Performance &amp; Cost <span class="fmt">upcoming</span></li>
 <li class="upcoming"><span class="wk">03</span> Data Representation <span class="fmt">upcoming</span></li>
 <li class="upcoming"><span class="wk">04</span> ISA I <span class="fmt">upcoming</span></li>
