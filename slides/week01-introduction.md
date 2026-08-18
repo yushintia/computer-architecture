@@ -17,8 +17,9 @@ Yushintia Pramitarini, Ph.D · Dept. of Intelligent Computing · Thu [4-6] · �
 </div>
 
 <!--
-notes: Ask who has ever argued with a friend or a salesperson about which
-laptop is "actually faster." That argument is today's hook.
+notes: Welcome the class. Ask: "Have you ever compared two laptops before
+buying one?" A few hands will go up. Say: today we solve a real mystery
+about laptops. Keep it light, this is the hook for the whole semester.
 -->
 
 ---
@@ -45,7 +46,40 @@ laptop is "actually faster." That argument is today's hook.
 <div class="wk review"><div class="n">Wk 15</div><div class="t">Final Exam</div></div>
 </div>
 
-<!-- notes: Point out the arc: measure, represent, execute, speed up, remember, parallelize. Fifteen weeks, one machine, built up layer by layer. -->
+<!--
+notes: Point at the row. Say: fifteen weeks, one machine. We measure it,
+then describe it, then build it, then make it fast. Don't explain every
+word yet, just the shape.
+-->
+
+---
+
+<!-- NEW: warm-up + Try-It for 차시 1, placed right after the roadmap (slot 2) -->
+
+# Before We Start: Quick Pair Check
+
+Pair up with the person next to you. Answer these together. Two minutes.
+
+1. Write the number **13** in binary (0s and 1s only).
+2. In your own words: what is a "program"?
+3. True or false: a computer only understands 0s and 1s.
+
+<div class="why">
+This checks two things you already learned: <strong>binary numbers</strong>
+(Digital Logic) and <strong>what a program is</strong> (Programming). We
+build on both today.
+</div>
+
+<!--
+notes: Give students 2 minutes to discuss in pairs, then ask ALOUD:
+(1) "Who can say 13 in binary?" (answer: 1101)
+(2) "What is a program, in one sentence?" (answer: a list of instructions
+a computer follows, step by step)
+(3) "Does a computer only understand 0s and 1s?" (answer: true, at the
+lowest level; everything else is built on top of that)
+If most pairs struggle, slow down today's pace and revisit binary
+briefly before continuing.
+-->
 
 ---
 
@@ -53,12 +87,12 @@ laptop is "actually faster." That argument is today's hook.
 
 # What You Already Bring
 
-- **Digital Logic**: you already know gates, truth tables, flip-flops. Today's machine is built entirely out of those parts
-- **Computer Programming**: you have written code that "just runs." This course opens the box underneath it
-- **Data Structure**: you know arrays and pointers live "in memory." This course explains what memory actually is, physically
+- **Digital Logic:** you already know gates and flip-flops. Today's computer is built from those same parts
+- **Computer Programming:** you have written code that runs. This course opens the box underneath it
+- **Data Structure:** you know arrays and pointers live "in memory." This course shows what memory really is
 
-We are not starting from zero. We are pointing what you know at the
-machine that has been running your code the whole time.
+You are not starting from zero. You already know the pieces. This course
+shows how they fit together into one real machine.
 
 ---
 
@@ -67,7 +101,7 @@ machine that has been running your code the whole time.
 <!-- _class: section -->
 
 # Course Logistics
-<div class="driving-q">Read once now, referenced all semester.</div>
+<div class="driving-q">Read once now, use all semester.</div>
 
 ---
 
@@ -82,16 +116,27 @@ machine that has been running your code the whole time.
 | Presentation | 10% |
 | In-class items | 10% |
 
-<!-- notes: Assignment 1 due Week 4 (ISA I). Assignment 2 due Week 11 (Memory Hierarchy I). Quiz 1 Week 5, Quiz 2 Week 13. Week 14 is a group presentation on a modern processor or architecture case study. -->
+<!-- notes: Assignment 1 is due Week 4. Assignment 2 is due Week 11. Quiz 1 is Week 5, Quiz 2 is Week 13. Week 14 is a group presentation on a real processor. -->
 
 ---
 
 # Textbook, Policy & Contact
 
-- **Textbook:** Hennessy & Patterson, *Computer Architecture: A Quantitative Approach*, 6th ed., Morgan Kaufmann, 2017
-- **References:** Stallings, *Computer Organization and Architecture*, Pearson, 2019; Bryant & O'Hallaron, *Computer Systems: A Programmer's Perspective*, 3rd ed., Pearson, 2015
-- **Policy:** attend and participate every class; late assignments are penalized; plagiarism and cheating lead to disciplinary action
-- **Contact:** yushintia@deu.ac.kr, office hours by email appointment
+- **Textbook:** Hennessy & Patterson, *Computer Architecture: A Quantitative Approach*, 6th ed., 2017
+- **References:** Stallings, *Computer Organization and Architecture*, 2019; Bryant & O'Hallaron, *Computer Systems*, 3rd ed., 2015
+- **Policy:** come to every class and take part. Late work loses points. Cheating leads to discipline
+- **Contact:** yushintia@deu.ac.kr, office hours by email
+
+---
+
+<!-- NEW: Key Words for 차시 1 -->
+
+# Key Words Today (Session 1)
+
+- **Clock speed (GHz):** how many times per second a chip's clock "ticks." Printed on every spec sheet
+- **Spec sheet:** the list of numbers a store shows you about a device
+- **Performance:** how fast a machine actually finishes real work
+- **Benchmark:** a fair, repeatable test used to measure performance
 
 ---
 
@@ -101,21 +146,24 @@ machine that has been running your code the whole time.
 
 <div class="pain">
 
-A customer walks into SmartPick, the campus electronics store, holding
-two laptop listings pulled up on her phone. Both list the exact same
-processor speed, printed in big letters on the box: 3.0 GHz. One costs
-more than the other, so she asks the obvious question: since the number
-on the box is the same, why is the expensive one worth the extra money?
+A customer walks into SmartPick, the campus electronics store. She holds
+two laptop listings on her phone. Both list the exact same speed: 3.0
+GHz, printed in big letters. One laptop costs more. She asks the clerk:
+if the number is the same, why does one cost more?
 
-The clerk tries to answer. He opens both laptops, runs the same video
-export, and starts a timer. The cheaper one finishes in just under four
-minutes. The expensive one finishes in under ninety seconds, more than
-twice as fast, on paper the identical processor speed. He has no idea
-why, and neither does she.
+The clerk runs the same test on both laptops: export the same video. He
+starts a timer. The cheaper laptop finishes in about 4 minutes. The
+expensive one finishes in about 90 seconds, less than half the time. The
+number on both boxes said "3.0 GHz." He does not know why. Neither does
+she.
 
 </div>
 
-<!-- notes: Do not use the word "architecture" or "microarchitecture" yet. Let the mismatch sit uncomfortably first. -->
+<!--
+notes: Do not say "architecture" or "microarchitecture" yet. Let the
+class sit with the confusion for a moment. Ask: "Any guesses why?" Take
+2-3 guesses, then move on without confirming or denying any of them.
+-->
 
 ---
 
@@ -134,9 +182,8 @@ why, and neither does she.
 </div>
 </div>
 
-Same advertised clock speed. More than twice the real-world speed. This
-gap is not a rounding error, and it is not marketing. It is this entire
-course.
+Same advertised speed. More than twice the real speed. This gap is not a
+mistake, and it is not marketing. It is this entire course.
 
 <!-- notes: Let the gap between the two bars sit for a second before moving on. -->
 
@@ -146,16 +193,15 @@ course.
 
 # What Else This Actually Costs
 
-- A student buys the wrong laptop for video editing or game development coursework, based on a spec sheet number that does not mean what they think it means
-- A startup rents the wrong cloud server tier for their app, paying for clock speed instead of the performance their workload actually needs
-- A company ships a product on hardware that "should" be fast enough on paper, then misses its deadline when it is not
+- A student buys the wrong laptop for video editing, trusting one number on the box
+- A startup rents the wrong cloud server, paying for speed it does not actually get
+- A company ships a product on hardware that "should" be fast enough, then misses its deadline
 
 <div class="why">
-<strong>In industry:</strong> "why is this slow, and what would you change"
-is a standard interview question for hardware, systems, and even backend
-roles. At cloud-computing scale, picking the wrong processor generation
-for a datacenter has cost real companies millions of dollars a year in
-wasted spend.
+<strong>In industry:</strong> "why is this slow, and what would you
+change" is a common interview question. It comes up for hardware and
+software jobs alike. Picking the wrong processor for a datacenter can
+cost a company millions of dollars a year.
 </div>
 
 ---
@@ -174,15 +220,15 @@ wasted spend.
   <div class="bar-value">real monthly budget, wasted</div>
 </div>
 <div class="bar-row">
-  <div class="bar-label">One datacenter, wrong chip generation</div>
+  <div class="bar-label">One datacenter, wrong chip</div>
   <div class="bar-track"><div class="bar-fill risk-high" style="width: 92%"></div></div>
   <div class="bar-value">millions of dollars a year</div>
 </div>
 </div>
-<div class="bar-note">illustrative, not measured data: the point is the trend, not the exact numbers</div>
+<div class="bar-note">these numbers are examples, not measured data — the point is the pattern</div>
 
-Same mistake, three sizes. A system with no way to reason about
-performance **will** get this wrong, at whatever scale it operates.
+Same mistake, three different sizes. Not knowing this **will** cost you,
+at whatever scale you work.
 
 ---
 
@@ -192,7 +238,7 @@ performance **will** get this wrong, at whatever scale it operates.
 
 # This Week's Question
 
-<div class="driving-q">"What's actually happening, layer by layer, when a computer runs a single line of your code?"</div>
+<div class="driving-q">"What actually happens, step by step, when a computer runs one line of your code?"</div>
 
 ---
 
@@ -200,31 +246,59 @@ performance **will** get this wrong, at whatever scale it operates.
 
 # By the End of This Week, You Can
 
-1. Describe the layers between a line of source code and the physical transistors that execute it
-2. Explain why identical clock speed does not guarantee identical real-world performance
-3. Name the semester's major stops: instructions, datapath, pipelining, memory, parallelism
-4. State this course's official teaching objectives and where each is covered
+1. Name the layers between a line of code and the physical chip
+2. Explain why the same clock speed does not mean the same real speed
+3. List this semester's main topics: instructions, datapath, pipelining, memory, parallelism
+4. State this course's official goals and where each one is taught
 
 ---
 
-# This Course's Teaching Objectives
+# This Course's Official Goals
 
-<div class="thread">Not just this week's goals. This is what the syllabus commits this whole course to.</div>
+<div class="thread">Not just this week's goals. These are the syllabus's goals for the whole course.</div>
 
-| # | Objective (from the syllabus) | Where |
+| # | Goal (from the syllabus) | Where |
 |---|---|---|
-| 1 | Explain how a modern computer system is organized and how its parts interact during execution | Previewed today, all semester |
-| 2 | Read and reason about assembly-level instructions; explain how instruction set design shapes implementation | Weeks 3-5 |
-| 3 | Analyze single-cycle and pipelined datapaths and quantify the cost of hazards | Weeks 6-7, 9-10 |
-| 4 | Evaluate cache and virtual memory designs and their effect on access time | Weeks 11-12 |
-| 5 | Explain instruction-level, thread-level, and data-level parallelism in modern designs | Week 13 |
+| 1 | Explain how a computer's parts work together | This week, all semester |
+| 2 | Read and reason about assembly instructions | Weeks 3-5 |
+| 3 | Analyze single-cycle and pipelined designs | Weeks 6-7, 9-10 |
+| 4 | Evaluate cache and virtual memory designs | Weeks 11-12 |
+| 5 | Explain parallelism in modern designs | Week 13 |
+
+---
+
+<!-- NEW: Try-It preview closing 차시 1 -->
+
+# Coming Up Next: Worksheet Part A
+
+Next session, you will work in pairs on **Worksheet Part A**.
+
+- You will see two real-looking laptop spec sheets, like the SmartPick story
+- Your pair predicts: which laptop is actually faster, and why
+- Then we check your prediction against the real answer together
+
+<div class="why">
+Bring your notebook. No laptop or calculator needed, just the spec
+sheets we hand out.
+</div>
 
 ---
 
 <!-- _class: section -->
 
 # End of 차시 1
-<div class="driving-q">Short break. 차시 2 starts with: where did this whole field come from?</div>
+<div class="driving-q">Short break. 차시 2 starts with: where did this problem come from?</div>
+
+---
+
+<!-- NEW: Key Words for 차시 2 -->
+
+# Key Words Today (Session 2)
+
+- **ISA (Instruction Set Architecture):** the fixed list of commands a processor understands
+- **Microarchitecture:** one specific way to build a processor that supports that list
+- **Transistor:** a tiny switch, on or off. Chips have billions of them
+- **Cache:** small, fast memory that sits close to the processor
 
 ---
 
@@ -232,33 +306,31 @@ performance **will** get this wrong, at whatever scale it operates.
 
 # This Problem Is Not New
 
-<div class="thread">You just felt the pain. Now: who else felt it, and what did the field do about it?</div>
+<div class="thread">You just felt the pain. Now: who else felt it, and what did the field do?</div>
 
-- **1945:** John von Neumann describes the stored-program computer, a single memory holding both instructions and data. Nearly every computer since, including the laptops in the story, is still built on this idea
-- **1965:** Gordon Moore observes that transistor counts double roughly every two years. For four decades, chipmakers used that growth mostly to push clock speed higher and higher
+- **1945:** John von Neumann describes a computer with one memory for both instructions and data. Almost every computer since, including SmartPick's laptops, still works this way
+- **1965:** Gordon Moore notices that the number of transistors on a chip keeps doubling. For decades, chipmakers used this to make clock speed higher and higher
 
 <div class="why">
-Around 2004, the "MHz race" hit a wall: pushing clock speed any higher
-made chips too hot to cool affordably. The industry's answer was not a
-faster single core, it was **more cores running in parallel**. That
-single decision is why "same GHz" no longer means "same speed," and it
-is why Week 13 exists.
+Around 2004, higher clock speed made chips too hot. So chipmakers
+stopped pushing speed on one core, and started adding <strong>more
+cores</strong> instead. That single change is why "same GHz" no longer
+means "same speed."
 </div>
 
 ---
 
-# Sixty Years of the Same Underlying Question
+# Sixty Years, Same Question
 
 <div class="timeline">
-<div class="pt"><div class="dot"></div><div class="y">1945</div><div class="d">Von Neumann architecture<br>one memory, instructions and data</div></div>
-<div class="pt"><div class="dot"></div><div class="y">1965</div><div class="d">Moore's Law<br>transistor counts, doubling</div></div>
-<div class="pt"><div class="dot"></div><div class="y">~2004</div><div class="d">The power wall<br>clock speed stalls, multicore begins</div></div>
-<div class="pt"><div class="dot"></div><div class="y">Today</div><div class="d">Multicore CPUs, GPUs, AI accelerators<br>same principles, still evolving</div></div>
+<div class="pt"><div class="dot"></div><div class="y">1945</div><div class="d">One memory<br>for code and data</div></div>
+<div class="pt"><div class="dot"></div><div class="y">1965</div><div class="d">Moore's Law<br>more transistors, over time</div></div>
+<div class="pt"><div class="dot"></div><div class="y">~2004</div><div class="d">The power wall<br>speed stalls, cores multiply</div></div>
+<div class="pt"><div class="dot"></div><div class="y">Today</div><div class="d">Multicore, GPUs, AI chips<br>same question, still evolving</div></div>
 </div>
 
-Every era asked the same question: how do we make programs run faster,
-given the physical limits of the moment? This course teaches you to
-answer it precisely, not by guessing from a spec sheet.
+Every era asked the same question: how do we make programs run faster?
+This course teaches you to answer it with numbers, not guesses.
 
 ---
 
@@ -266,20 +338,19 @@ answer it precisely, not by guessing from a spec sheet.
 
 # Computer Architecture: Definition
 
-<div class="thread">Sixty years of engineering point at one precise field. Here it is.</div>
+<div class="thread">Sixty years of engineering point at one clear field. Here it is.</div>
 
-> **Computer architecture** is the design of a computer system as seen
-> from three linked layers: the instruction set architecture (what
-> software sees), the microarchitecture (how it is implemented), and the
-> physical hardware (how it is built).
+> **Computer architecture** is how a computer system is designed, seen as
+> three connected layers: the instruction set (what software sees), the
+> microarchitecture (how it is built), and the physical hardware.
 
-- **Instruction Set Architecture (ISA):** the contract between software and hardware, the set of instructions a processor understands
-- **Microarchitecture:** one specific way of implementing that ISA in circuitry, timing, and internal design
-- **Hardware:** the actual transistors, wires, and physical chip
+- **ISA:** the contract between software and hardware
+- **Microarchitecture:** one way to build circuits that follow that contract
+- **Hardware:** the actual transistors and wires on the chip
 
-Two laptops can share the same ISA (so the same software runs on both)
-while having completely different microarchitectures. That gap is
-exactly what the story on the first slide was hiding.
+Two laptops can share the same ISA, so the same software runs on both,
+while having very different microarchitectures. That gap is the mystery
+from slide one.
 
 ---
 
@@ -287,124 +358,39 @@ exactly what the story on the first slide was hiding.
 
 # The Abstraction Stack: What Software Sees (1/2)
 
-<div class="thread">One definition, six concrete layers. Here is the top half: what a programmer sees.</div>
+<div class="thread">One definition, six layers. Here is the top half: what a programmer sees.</div>
 
 <div class="stack">
-<div class="layer view"><span class="h">Application</span> <span class="s">the video editor, the game, the app you actually use</span></div>
-<div class="layer view"><span class="h">Operating System</span> <span class="s">schedules programs, manages memory and devices</span></div>
-<div class="layer logical"><span class="h">Instruction Set Architecture</span> <span class="s">the fixed vocabulary of instructions: this course's Weeks 3-5</span></div>
+<div class="layer view"><span class="h">Application</span> <span class="s">the video editor, the game, any app you use</span></div>
+<div class="layer view"><span class="h">Operating System</span> <span class="s">runs programs, manages memory and devices</span></div>
+<div class="layer logical"><span class="h">Instruction Set Architecture</span> <span class="s">the fixed set of commands: Weeks 3-5</span></div>
 </div>
 
-Everything above the ISA line is software's problem. Everything below
-it is this course's problem.
+Everything above the ISA is software's job. Everything below it is this
+course's job.
 
 ---
 
 # The Abstraction Stack: How It's Built (2/2)
 
-<div class="thread">The bottom half: how one ISA actually gets implemented in silicon.</div>
+<div class="thread">The bottom half: how one ISA is actually built in silicon.</div>
 
 <div class="stack">
-<div class="layer logical"><span class="h">Microarchitecture</span> <span class="s">the datapath and pipeline that execute those instructions: Weeks 6-10</span></div>
-<div class="layer physical"><span class="h">Logic Gates</span> <span class="s">AND, OR, adders, registers, built from your Digital Logic course</span></div>
-<div class="layer physical"><span class="h">Transistors</span> <span class="s">the physical devices switching on and off, billions per chip</span></div>
+<div class="layer logical"><span class="h">Microarchitecture</span> <span class="s">the circuits that run those commands: Weeks 6-10</span></div>
+<div class="layer physical"><span class="h">Logic Gates</span> <span class="s">AND, OR, adders — from your Digital Logic course</span></div>
+<div class="layer physical"><span class="h">Transistors</span> <span class="s">tiny switches, billions per chip</span></div>
 </div>
 
-This course lives mainly in the middle two layers: ISA and
-microarchitecture. That is exactly where the two laptops differed.
-
----
-
-# The ISA Is a Menu, Not a Kitchen
-
-<div class="thread">One layer from the stack, zoomed in, with an analogy that makes it concrete.</div>
-
-**The ISA is the contract.** It lists what a processor can be asked to
-do (add, load, branch), the same way a restaurant menu lists what can be
-ordered, without saying anything about how the kitchen prepares it.
-
-<div class="why">
-Two restaurants can serve an identical menu from completely different
-kitchens, one fast, one slow. Two laptops can run the exact same
-software, the same "menu," from completely different internal designs,
-one fast, one slow. Neither the menu nor the box's clock-speed number
-tells you which kitchen you are getting.
-</div>
-
----
-
-# Preview: A Number That Actually Explains the Gap
-
-<div class="thread">The abstraction stack explains where the difference lives. Next week gives it a number.</div>
-
-Two processors at the same clock speed can still need a different
-number of clock cycles to finish the same instruction, because their
-microarchitectures are different "kitchens." A processor that needs
-fewer cycles per instruction finishes the same program faster, even at
-an identical GHz rating.
-
-<div class="why">
-This single idea, cycles needed per instruction, is precisely why the
-expensive SmartPick laptop won the video-export race. Week 2 turns this
-sentence into a formula you can compute with.
-</div>
-
----
-
-# Demo, Step by Step: Decoding a Real Spec Sheet
-
-<div class="thread">Four steps, one real listing page, applying everything from the last four slides.</div>
-
-**Step 1 of 4: Read the raw listing, as a customer would.**
-
-| Spec line | Value laptop | Studio laptop |
-|---|---|---|
-| Processor | 3.0 GHz, 8 cores | 3.0 GHz, 8 cores |
-| Released | 2019 generation | 2023 generation |
-| Cache | 8 MB | 24 MB |
-
-At a glance, the top row makes them look identical.
-
----
-
-# Demo, Step by Step: Decoding a Real Spec Sheet
-
-**Step 2 of 4: Separate what the ISA guarantees from what it doesn't.**
-
-Both list "8 cores, 3.0 GHz," and both run the same Windows software:
-same ISA family, so the same programs install and run on either machine.
-The ISA guarantees compatibility. It says nothing about speed.
-
----
-
-# Demo, Step by Step: Decoding a Real Spec Sheet
-
-**Step 3 of 4: Find the line the box doesn't advertise loudly.**
-
-"Released 2019" versus "Released 2023" is a proxy for a different
-microarchitecture generation, four years of design improvements. The
-cache size difference (8 MB vs 24 MB) is a direct microarchitecture
-detail: more cache means fewer slow trips to main memory per
-instruction, on average.
-
----
-
-# Demo, Step by Step: Decoding a Real Spec Sheet
-
-**Step 4 of 4: State what is still missing.**
-
-We can now say, correctly, that Studio's newer microarchitecture and
-larger cache are why it wins, not its clock speed. What we still
-**cannot** do is put a number on the gap, or predict it for a laptop
-that has not been benchmarked yet. That precise number is Week 2.
+This course mostly lives in the middle two layers. That is exactly where
+the two laptops were different.
 
 ---
 
 # Case Study: Meet the Running Example
 
-<div class="thread">The stack above is abstract. Here is the concrete pair this whole course keeps coming back to.</div>
+<div class="thread">The stack above is abstract. Here is the concrete pair we return to all semester.</div>
 
-This semester, most worked examples return to **SmartPick's two
+This semester, our worked examples come back to **SmartPick's two
 laptops**, "Value" and "Studio":
 
 <div class="chip-row">
@@ -414,128 +400,136 @@ laptops**, "Value" and "Studio":
 <span class="chip">Different microarchitecture</span>
 </div>
 
-Week 2 assigns both machines real numbers (instruction count, cycles per
-instruction) and computes, precisely, why Studio wins. Later weeks
-reopen this same pair for pipelining, cache size, and core count.
+Week 2 gives both machines real numbers and computes exactly why Studio
+wins. Later weeks reopen this same pair.
 
 ---
 
-# Where This Field Shows Up Around You
+# Worked Example: Same Numbers, Different Result
 
-<div class="thread">You just met one running example. Here is where the same questions live in products you already use.</div>
+<div class="thread">One demo, using everything from the last three slides.</div>
 
-<div class="appgrid">
-<div class="app"><div class="name">Smartphone SoC</div><div class="desc">a whole computer architecture on one chip, battery-limited</div></div>
-<div class="app"><div class="name">Cloud servers (AWS, Naver Cloud)</div><div class="desc">renting exactly the right CPU generation, at scale</div></div>
-<div class="app"><div class="name">Gaming GPU</div><div class="desc">thousands of simple cores, parallel by design</div></div>
-<div class="app"><div class="name">AI accelerators (TPU, NPU)</div><div class="desc">chips built specifically to run neural networks fast</div></div>
-<div class="app"><div class="name">Automotive / embedded chips</div><div class="desc">real-time constraints, safety-critical timing</div></div>
+| Spec line | Value laptop | Studio laptop |
+|---|---|---|
+| Processor | 3.0 GHz, 8 cores | 3.0 GHz, 8 cores |
+| Released | 2019 | 2023 |
+| Cache | 8 MB | 24 MB |
+
+Both run the same software: **same ISA**, so the ISA is not the answer.
+The **released year** and **cache size** point to a different
+microarchitecture. More cache means fewer slow trips to memory. We still
+cannot put an exact number on the gap — that is Week 2's job.
+
+---
+
+<!-- NEW: Try-It hand-off to Worksheet Part A -->
+
+# Try It: Worksheet Part A
+
+<div class="why">
+Pair up. Open <strong>Worksheet Part A</strong>. You will see two full
+spec sheets and predict which laptop is faster, and why. About 15
+minutes.
 </div>
 
-Every one of these is a different answer to the same question this
-course teaches: given a fixed budget of transistors and power, how do
-you design the fastest possible machine?
+- Write down your prediction and your reason
+- It is OK to be unsure — write down what you do not know too
+- We compare answers together at the start of 차시 3
 
----
-
-# Who Actually Designs This
-
-<div class="thread">A field this old has specialized roles. Here is who does what.</div>
-
-- **Computer architects:** design the ISA and microarchitecture trade-offs (this course's core focus)
-- **Compiler engineers:** translate source code into the ISA's instructions as efficiently as possible
-- **Chip / hardware engineers:** turn a microarchitecture design into physical silicon
-- **Systems / performance engineers:** measure real workloads and choose the right hardware for the job, exactly the SmartPick clerk's job, done rigorously
-
----
-
-# Common Mistakes
-
-- **"Higher GHz always means faster":** clock speed is only one factor; cycles needed per instruction matters just as much, as the SmartPick story showed
-- **"Architecture is just hardware, software doesn't matter":** compilers and instruction set design shape performance just as much as circuitry does
-- **"More cores always means faster":** a program that cannot be split into independent pieces gains little from extra cores; Week 13 makes this precise
-
----
-
-# Check Yourself
-
-1. Two laptops advertise the same clock speed but finish the same task at very different speeds. Name one architectural reason this can happen, using this week's vocabulary.
-2. Put these in order, from the software you write to the physical chip: microarchitecture, application, transistors, ISA, logic gates.
-
----
-
-# Answers
-
-1. They can share the same ISA while having different **microarchitectures**, so one needs fewer clock cycles per instruction than the other, even at the same clock speed.
-2. **Application -> ISA -> Microarchitecture -> Logic Gates -> Transistors.**
+<!--
+notes: Hand out or project Worksheet Part A now. Walk around while pairs
+work. Do not confirm any answers yet, the real discussion happens next
+session. If a pair finishes early, ask them to also read the "optional
+reading" box on the handout.
+-->
 
 ---
 
 <!-- _class: section -->
 
 # End of 차시 2
-<div class="driving-q">Short break. 차시 3 starts with: what this map still can't tell us.</div>
+<div class="driving-q">Short break. 차시 3 starts with: what does the map still not tell us?</div>
 
 ---
 
-<!-- Act 3 / BUILD, continued -->
+<!-- NEW: Key Words for 차시 3 -->
 
-# One More Look at the Whole Machine
+# Key Words Today (Session 3)
 
-<div class="thread">Before closing, connect every layer back to the exact story that opened today.</div>
-
-<div class="pipeline">
-<div class="stage"><div class="h">Application</div><div class="s">video export button, clicked</div></div>
-<div class="arrow">&rsaquo;</div>
-<div class="stage"><div class="h">ISA</div><div class="s">same instruction set, both laptops</div></div>
-<div class="arrow">&rsaquo;</div>
-<div class="stage"><div class="h">Microarchitecture</div><div class="s">different "kitchen," different speed</div></div>
-<div class="arrow">&rsaquo;</div>
-<div class="stage"><div class="h">Transistors</div><div class="s">where the work physically happens</div></div>
-</div>
-
-Every remaining week of this course zooms into one stage of this
-diagram. When a topic feels disconnected, find it here first.
+- **Power wall:** the limit that stopped clock speed from rising forever
+- **Multicore:** a chip with more than one processor core
+- **Parallelism:** doing more than one piece of work at the same time
+- **Trade-off:** gaining one thing (speed) by giving up another (power, cost)
 
 ---
 
-# A Second, Everyday Version of the Same Idea
+<!-- NEW: Try-It hand-off to Worksheet Part B -->
 
-<div class="thread">One more grounding example, away from laptops entirely, so the idea sticks.</div>
-
-Two food-delivery riders, 배달의민족 and Coupang Eats, both promise "20
-minutes or less." One consistently beats the estimate, the other
-consistently misses it. Same promise (the "ISA"), different routing,
-different bikes, different rider habits (the "microarchitecture"). The
-promise never explains the outcome; the implementation underneath it
-does.
+# Try It: Worksheet Part B
 
 <div class="why">
-Whenever a spec sheet, a delivery app, or a product page makes a
-promise, the real question this course trains you to ask is: what is
-actually implementing that promise, and how well?
+Same pairs. Open <strong>Worksheet Part B</strong>. Check your Part A
+prediction against the real answer, then answer two new questions. About
+15 minutes.
+</div>
+
+- The answer key explains **why we still cannot fully explain the gap** without Week 2's tools
+- That "we cannot tell yet" feeling is exactly why this course exists
+
+<!--
+notes: Hand out Worksheet Part B (it includes the Part A answer key at
+the top). Let pairs self-check. After ~15 minutes, cold-call 2-3 pairs
+to share their reasoning out loud before moving to the next slide.
+-->
+
+---
+
+# Let's Look at the Whole Machine Together
+
+<div class="thread">Before closing, connect every layer back to today's opening story.</div>
+
+<div class="pipeline">
+<div class="stage"><div class="h">Application</div><div class="s">the "export video" button</div></div>
+<div class="arrow">&rsaquo;</div>
+<div class="stage"><div class="h">ISA</div><div class="s">same on both laptops</div></div>
+<div class="arrow">&rsaquo;</div>
+<div class="stage"><div class="h">Microarchitecture</div><div class="s">different, so different speed</div></div>
+<div class="arrow">&rsaquo;</div>
+<div class="stage"><div class="h">Transistors</div><div class="s">where the work happens</div></div>
+</div>
+
+Every later week zooms into one stage of this picture.
+
+---
+
+<!-- SLOT N-1: Common mistakes -->
+
+# Common Mistakes
+
+- **"Higher GHz always means faster":** clock speed is only one factor. How the chip is built matters just as much
+- **"Architecture is only hardware":** software design shapes real speed too, not just circuits
+- **"More cores always means faster":** a task that cannot be split up gains little from extra cores. Week 13 explains why
+
+---
+
+<!-- SLOT N: Check yourself -->
+
+# Check Yourself
+
+1. Two laptops have the same clock speed but very different real speed. Give one reason, using today's words
+2. Put these in order, from your code to the physical chip: microarchitecture, application, transistors, ISA, logic gates
+
+<div class="why">
+After this, take the short self-check quiz (paper or online) for more
+practice. It is ungraded.
 </div>
 
 ---
 
-# This Semester's Real Shape
+# Answers
 
-<div class="thread">Six layers, sixty years of history, one running example. Here is the order you will build it in.</div>
-
-<div class="pipeline">
-<div class="stage"><div class="h">Measure</div><div class="s">performance metrics<br>Week 2</div></div>
-<div class="arrow">&rsaquo;</div>
-<div class="stage"><div class="h">Represent</div><div class="s">data, bits<br>Week 3</div></div>
-<div class="arrow">&rsaquo;</div>
-<div class="stage"><div class="h">Instruct</div><div class="s">the ISA<br>Weeks 4-5</div></div>
-<div class="arrow">&rsaquo;</div>
-<div class="stage"><div class="h">Execute</div><div class="s">datapath, pipeline<br>Weeks 6-10</div></div>
-<div class="arrow">&rsaquo;</div>
-<div class="stage"><div class="h">Remember &amp; Parallelize</div><div class="s">memory, cores<br>Weeks 11-13</div></div>
-</div>
-
-Every station on this line answers one more piece of "why was Studio
-faster than Value."
+1. They can share the same **ISA** but have different **microarchitectures** — one design needs fewer steps to do the same job
+2. **Application -> ISA -> Microarchitecture -> Logic Gates -> Transistors**
 
 ---
 
@@ -544,10 +538,10 @@ faster than Value."
 # What Today's Map Cannot Do Yet
 
 <div class="limits">
-We now have the vocabulary and the layered map: ISA, microarchitecture,
-hardware. But we still cannot put an actual number on which machine is
-faster, or by how much, or why. Knowing the layers exist is not the
-same as being able to measure them.
+We now have the words and the layered map: ISA, microarchitecture,
+hardware. But we still cannot put a number on which machine is faster,
+or by how much. Knowing the layers exist is not the same as measuring
+them.
 </div>
 
 ---
@@ -556,10 +550,10 @@ same as being able to measure them.
 
 # Next Week
 
-Week 1 leaves **how to measure and compare performance precisely**
-unsolved. **Week 2, Performance and Cost**, addresses it: CPU time,
-clock rate, CPI, and Amdahl's Law, the exact tools to settle the
-SmartPick argument with numbers instead of a stopwatch.
+Week 1 leaves **how to measure and compare speed precisely** unsolved.
+**Week 2, Performance and Cost**, solves it: CPU time, clock rate, CPI,
+and Amdahl's Law. The exact tools to settle the SmartPick question with
+numbers, not a stopwatch.
 
 ---
 
@@ -567,11 +561,12 @@ SmartPick argument with numbers instead of a stopwatch.
 
 # Summary
 
-- Computer architecture spans three linked layers: ISA, microarchitecture, and hardware, with logic gates and transistors underneath
-- Identical clock speed does not guarantee identical performance, because microarchitecture differs even when the ISA does not
-- The power wall around 2004 shifted the field from raw clock speed to multicore and parallelism, this course's final major topic
+- Computer architecture has three layers: ISA, microarchitecture, hardware, built on logic gates and transistors
+- Same clock speed does not mean same real speed, because microarchitecture can differ
+- Around 2004, chip speed hit a wall, so the field moved to multicore. That is this course's final major topic
+- **You did today:** warm-up quiz, Worksheet Parts A and B, self-check quiz
 - **Reading:** Hennessy & Patterson, 6th ed., Chapter 1
-- **Prepare:** find one real spec sheet (a laptop, a phone) and bring one number from it you cannot yet fully explain
+- **Prepare:** find one real spec sheet (laptop or phone). Bring one number you cannot yet fully explain
 
 ---
 
