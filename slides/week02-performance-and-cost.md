@@ -56,8 +56,8 @@ us a ruler.
 
 # Last Week, This Week
 
-- **Last week delivered:** names for the layers — ISA, microarchitecture, physical hardware — and the SmartPick mystery
-- **Last week left broken:** we still could not put one exact number on which laptop is actually faster
+- **Last week delivered:** the course contract, and the SmartPick mystery — two laptops, same spec sheet, one clearly slower in real use
+- **Last week left broken:** we still do not know why the spec sheet did not tell the whole story
 
 Today we build that number, step by step.
 
@@ -81,10 +81,10 @@ Today we build that number, step by step.
 
 <div class="pain">
 
-We now have the words and the layered map: ISA, microarchitecture,
-hardware. But we still cannot put a number on which machine is faster,
-or by how much. Knowing the layers exist is not the same as measuring
-them.
+Week 1 left us with the SmartPick mystery: two laptops, same spec
+sheet, one clearly slower in real use. But we still cannot put a
+number on which machine is faster, or by how much. Knowing the mystery
+exists is not the same as measuring it.
 
 The SmartPick clerk still only has a stopwatch. Value: about 3 minutes
 50 seconds. Studio: about 1 minute 25 seconds. He can repeat this test,

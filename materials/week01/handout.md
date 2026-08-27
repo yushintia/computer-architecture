@@ -1,159 +1,155 @@
-# Week 1 Handout: Introduction to Computer Architecture
+# Week 1 Course Handbook: Computer Architecture
 
-Computer Architecture (503872-004) — for students to keep and read again.
-Use plain, simple English on purpose, so it is easy to read even if
-English is not your first language.
+Computer Architecture (503872-004) — for students to keep and read
+again. Use plain, simple English on purpose, so it is easy to read
+even if English is not your first language. This handbook mirrors the
+course contract covered in the Week 1 slides. There is no worksheet or
+quiz for Week 1 — no technique has been taught yet to practice.
 
 ---
 
-## 1. Glossary: Key Words This Week
+## 1. Course Description
 
-Read each definition once now. You do not need to memorize them today —
-you will use them all semester.
+This course opens the box underneath the code you already know how to
+write. It covers how a program becomes instructions a chip can run
+(the instruction set), how a processor design — single-cycle,
+multi-cycle, pipelined — carries those instructions out, and how
+memory and parallel hardware make a real machine fast. Every idea ties
+back to one question: what makes a real computer fast or slow?
 
-| Term | Plain definition |
+## 2. Learning Objectives
+
+By the end of this course, you can:
+
+1. Explain how a line of code becomes work a physical chip performs.
+2. Compute and compare CPU performance using CPU time, CPI, and
+   Amdahl's Law.
+3. Represent numbers, text, and instructions as bits.
+4. Read and write basic assembly instructions.
+5. Explain how a single-cycle and a multi-cycle processor design work.
+6. Explain how pipelining speeds up a processor, and what can go wrong.
+7. Explain how cache, virtual memory, and parallelism make a modern
+   machine fast.
+
+## 3. Prerequisites
+
+- **Digital Logic**
+- **Computer Programming I & II**
+- **Data Structure**
+
+We do not start from zero. If gates and flip-flops, writing working
+code, or arrays and pointers feel shaky, say so early — it compounds
+fast otherwise.
+
+## 4. Textbooks
+
+- **Primary:** Hennessy & Patterson, *Computer Architecture: A
+  Quantitative Approach*, 6th ed., 2017
+- **Secondary:** Stallings, *Computer Organization and Architecture*,
+  2019; Bryant & O'Hallaron, *Computer Systems: A Programmer's
+  Perspective*, 3rd ed., 2015
+- **Also:** the lecture slides themselves are a listed course
+  reference
+
+## 5. How This Course Runs
+
+Each 150-minute class is split into three 50-minute sessions (차시 1,
+2, 3). Each session mixes short lectures with a warm-up question, a
+recap of what last week left unsolved, pair or group activities, and
+(most weeks) a short, ungraded self-check quiz. You will talk in this
+class, not just listen.
+
+## 6. Weekly Schedule
+
+| Wk | Topic | Wk | Topic |
+|---|---|---|---|
+| 1 | Introduction | 9 | Pipelining I |
+| 2 | Performance & Cost | 10 | Pipelining II |
+| 3 | Data Representation | 11 | Memory Hierarchy I — **Assignment 2** |
+| 4 | ISA I — **Assignment 1** | 12 | Memory Hierarchy II |
+| 5 | ISA II — **Quiz 1** | 13 | Parallelism — **Quiz 2** |
+| 6 | Single-Cycle | 14 | Presentation — **Group Presentation** |
+| 7 | Multi-Cycle | 15 | **Final Exam** (Wks 9-14) |
+| 8 | **Midterm Exam** (Wks 1-7) | | |
+
+## 7. Grading
+
+| Component | Weight |
 |---|---|
-| **Program** | A list of instructions a computer follows, one step at a time |
-| **Binary** | A number written using only two digits: 0 and 1 |
-| **Clock speed (GHz)** | How many times per second a chip's internal clock "ticks." 1 GHz = one billion ticks per second |
-| **Spec sheet** | The list of numbers and features a store shows about a device, like a laptop |
-| **Performance** | How fast a machine actually finishes real work, not just the number on the box |
-| **Benchmark** | A fair, repeatable test used to measure performance, so different machines can be compared honestly |
-| **ISA (Instruction Set Architecture)** | The fixed list of commands a processor understands — the "menu" of what it can be asked to do |
-| **Microarchitecture** | One specific way to build a processor that carries out an ISA's commands. Two processors can share an ISA but have very different microarchitectures |
-| **Hardware** | The physical chip: real transistors and wires you could touch |
-| **Transistor** | A tiny electronic switch. It is either on or off. A modern chip has billions of them |
-| **Logic gate** | A small circuit built from transistors (AND, OR, NOT, ...) that does one simple logic operation. You met these in Digital Logic |
-| **Cache** | A small amount of very fast memory placed close to the processor, used to avoid slow trips to main memory |
-| **Core** | One independent processing unit inside a chip. A chip can have many cores |
-| **Multicore** | A chip built with more than one core, so it can do more than one thing at the same time |
-| **Parallelism** | Doing more than one piece of work at the same time, instead of one after another |
-| **Power wall** | The physical limit that stopped chipmakers from endlessly raising clock speed, because faster chips get too hot |
-| **Trade-off** | Gaining one thing (like speed) only by giving up something else (like power use or cost) |
-| **Von Neumann architecture** | A computer design where one memory holds both the program's instructions and its data. Almost every computer today still uses this idea |
-| **Moore's Law** | The 1965 observation that the number of transistors on a chip roughly doubles every two years |
+| Attendance | 10% |
+| Midterm | 30% |
+| Final | 30% |
+| Assignments (×2) | 10% |
+| Presentation | 10% |
+| In-class items | 10% |
 
----
+**Grade distribution guideline:** A ≤30%, B ≤40%, C-F ≤30% of the
+class. This may shift after the add/drop period, based on final
+enrollment.
 
-## 2. The SmartPick Story, Worked Out Step by Step
+## 8. Assignments
 
-This is the full version of the story from class. Read it slowly if the
-in-class pace felt fast.
+| # | Released | Due | Topics |
+|---|---|---|---|
+| 1 | Wk 2 | Wk 4 | Binary representation, instruction encoding basics |
+| 2 | Wk 9 | Wk 11 | Datapath/pipelining trace, cache behavior |
 
-**The situation.** A customer at SmartPick, the campus electronics store,
-is comparing two laptops. Both boxes advertise the exact same clock
-speed: **3.0 GHz**. One laptop costs more than the other. She wants to
-know why.
+## 9. Feedback Policy
 
-**The test.** The store clerk runs the identical task — exporting the
-same video file — on both machines, with a stopwatch.
+> Assignments graded within one week with rubric and model answers;
+> exam item-analysis shared with weak-topic guidance and individual
+> review on request.
 
-| | Value laptop | Studio laptop |
-|---|---|---|
-| Advertised speed | 3.0 GHz | 3.0 GHz |
-| Cores | 8 | 8 |
-| Released | 2019 | 2023 |
-| Cache | 8 MB | 24 MB |
-| Price | lower | higher |
-| **Video export time** | **~3 min 50 sec** | **~1 min 25 sec** |
+In plain terms: you will know what you got wrong, and why, quickly
+enough for it to still matter for the next assignment or exam.
 
-**Step 1: What is identical?** The advertised clock speed (3.0 GHz) and
-the core count (8) are the same on both spec sheets. If you only read the
-big numbers, the two laptops look the same.
+## 10. Attendance & Late Work
 
-**Step 2: What does "same ISA" actually guarantee?** Both laptops run
-the same operating system and the same software. That means they share
-the same **ISA** (instruction set architecture) — the same "menu" of
-commands. Sharing an ISA guarantees that the *same software runs on
-both*. It says **nothing** about *how fast* it runs.
+- **Attendance** is 10% of your grade and is recorded every session.
+- **Late arrival:** arriving within 15 minutes of the start is
+  on-time; after that, you're marked late. Three lates equal one
+  absence.
+- **Can't attend?** Email the instructor *before* the session to be
+  marked excused — unexcused absences aren't eligible for makeup
+  credit.
+- **Late work:** loses 10% of that assignment's grade per day late, up
+  to 3 days. No credit after 3 days, unless arranged with the
+  instructor in advance.
 
-**Step 3: Find the detail the box does not shout about.** Two lines on
-the spec sheet are easy to skip: "Released 2019" vs. "Released 2023,"
-and "Cache 8 MB" vs. "Cache 24 MB." The release year is a hint: four
-extra years usually means a newer, improved **microarchitecture** — a
-different internal design of the same kind of processor. The cache size
-is a direct microarchitecture detail: a bigger cache means the processor
-needs fewer slow trips out to main memory, on average, so it finishes
-work faster.
+## 11. Academic Integrity
 
-**Step 4: State clearly what we can, and cannot, say yet.** We *can* now
-say, correctly: Studio's newer microarchitecture and bigger cache are
-why it wins, not its clock speed. We *cannot* yet put an exact number on
-the gap, or predict it for a laptop we have not tested. That precise
-number — using **CPU time**, **CPI (cycles per instruction)**, and
-**Amdahl's Law** — is what Week 2 teaches.
+- **Academic integrity:** submit your own work. Copying another
+  student's work, having someone else complete it for you, or
+  submitting unattributed AI-generated work as your own is a
+  violation.
+- **First violation:** zero credit on that assignment or exam, plus a
+  formal report. **Repeat violation:** may result in failing the
+  course, per university policy.
+- If anything here is unclear, ask — now is the cheapest time to ask.
 
----
+## 12. Support for Students with Disabilities
 
-## 3. Optional Reading: Extra Detail (Not Required, Not on the Quiz)
+- **Hearing-impaired:** front-row seating, lecture material files
+  provided where possible, urgent notices given in writing
+- **Mobility-impaired:** extended exam time
+- **Other documented conditions:** extended exam time, materials
+  provided in advance, enlarged exam copies, or other reasonable
+  accommodation based on need
 
-This section holds extra explanations that were trimmed from the slides
-to keep class time short. Read it if you are curious or want more
-examples.
+Contact the instructor early, and the Disability Student Support
+Center or Academic Affairs Team, so accommodations are ready before
+you need them.
 
-**The ISA is a menu, not a kitchen.** The ISA lists what a processor can
-be asked to do — add, load, branch — the same way a restaurant menu
-lists what you can order, without saying anything about how the kitchen
-actually cooks it. Two restaurants can serve the exact same menu from
-very different kitchens, one fast, one slow. Two laptops can run the
-exact same software from very different internal designs. Neither the
-menu nor the box's GHz number tells you which kitchen you are getting.
+## 13. Contact
 
-**A second, everyday version of the same idea.** Two food-delivery
-services both promise "20 minutes or less." One usually beats that
-promise; the other usually misses it. The promise is like the ISA — the
-same for both. The routing, the vehicles, the drivers' habits are like
-the microarchitecture — different for each — and that is what actually
-decides the outcome. Whenever something makes a promise (a spec sheet, an
-app, a delivery service), the useful question is always: *what is
-actually implementing that promise, and how well?*
+- **Email:** yushintia@deu.ac.kr
+- **Office hours:** by appointment, email first
+- Email is the fastest way to reach the instructor outside of class.
 
-**Where this shows up around you.**
+## 14. The SmartPick Story (Preview, Not Explained Yet)
 
-- **Smartphone chips (SoC):** a whole computer architecture on one small, battery-limited chip
-- **Cloud servers (AWS, Naver Cloud):** renting the right processor generation for your workload, at large scale
-- **Gaming GPUs:** thousands of simple cores, built for parallel work from the start
-- **AI accelerators (TPU, NPU):** chips designed specifically to run neural networks fast
-- **Automotive / embedded chips:** must respond in a guaranteed, predictable amount of time
-
-**Who actually designs this, as a job.**
-
-- **Computer architects** design the ISA and microarchitecture trade-offs — this course's core focus
-- **Compiler engineers** translate your source code into ISA instructions as efficiently as possible
-- **Chip / hardware engineers** turn a microarchitecture design into real, physical silicon
-- **Systems / performance engineers** measure real workloads and pick the right hardware for the job — exactly the SmartPick clerk's job, done rigorously
-
----
-
-## 4. Practice Problems (With Answers)
-
-Try each problem yourself before checking the answer underneath it.
-
-**Problem 1.** Convert the decimal number 13 to binary.
-> **Answer:** `1101` (8 + 4 + 0 + 1 = 13)
-
-**Problem 2.** Convert the binary number `1010` to decimal.
-> **Answer:** 10 (8 + 0 + 2 + 0)
-
-**Problem 3.** In one sentence, explain what a "program" is, in your own
-words.
-> **Answer (example):** A program is a list of steps a computer follows,
-> in order, to do a task.
-
-**Problem 4.** Two processors have the exact same ISA. Does that mean
-they run at the exact same speed? Explain in one sentence.
-> **Answer:** No. Sharing an ISA only guarantees the same software runs
-> on both; the microarchitecture underneath can still be very different,
-> which changes the real speed.
-
-**Problem 5.** Laptop A has an 8 MB cache. Laptop B has a 24 MB cache,
-same ISA, same clock speed. Which laptop, on average, makes fewer slow
-trips to main memory?
-> **Answer:** Laptop B, because a bigger cache holds more data close to
-> the processor, so it needs main memory less often, on average.
-
-**Problem 6.** Put these five layers in order, from the code you write
-down to the physical chip: `ISA`, `Transistors`, `Application`,
-`Microarchitecture`, `Logic Gates`.
-> **Answer:** Application -> ISA -> Microarchitecture -> Logic Gates ->
-> Transistors.
+This semester's worked examples come back to SmartPick, the campus
+electronics store, and two of its laptops with the exact same
+processor speed printed on the box, but very different real-world
+speed. Week 1 only poses this mystery. Week 2 starts to explain it,
+with real numbers instead of a stopwatch guess.

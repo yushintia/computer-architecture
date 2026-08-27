@@ -69,7 +69,7 @@ the pain slide (4) is too abstract, so fix it instead of breaking the rule.
 
 | Wk | Topic | Limit (leads to next pain) |
 |---|---|---|
-| 1 | Introduction | We have the map of layers, not yet a way to measure which machine is actually faster -> **W2** |
+| 1 | Introduction | We know how the course runs and met the SmartPick mystery, but not yet why the spec sheet did not tell the whole story -> **W2** |
 | 2 | Performance & Cost | We can measure speed precisely, but not yet how a number becomes a bit pattern the ALU can act on -> **W3** |
 | 3 | Data Representation | Bits are well-defined, but nothing yet says which bit pattern means "add" versus "load" -> **W4** |
 | 4 | ISA I | We can name instructions, but not yet compute with the full instruction set -> **W5** |
@@ -90,6 +90,14 @@ slot "Check yourself" (expanded into full review questions) + Act 4 (slots
 N+1..N+4, "Limits" replaced by "What to focus on next"). No Pain or Ground
 acts: there is no new concept to motivate. Weeks 5 and 13 carry an embedded
 quiz but keep the full spine: new content is still taught that day.
+
+Week 1 uses the **orientation variant**: the entire session is the course
+contract (syllabus, grading, policy, schedule) plus a single non-technical
+tease of the SmartPick running example — near-zero technical content, no
+Act 2/3 (Ground/Build). It still opens with the roadmap and closes with a
+Limits -> Bridge -> Summary -> Thank You, so the chain into Week 2 holds.
+Materials for Week 1 are handout-only (a course handbook); there is no
+worksheet or quiz that week, since no technique is taught yet to practice.
 
 ## Enforcement
 

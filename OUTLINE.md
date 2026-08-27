@@ -10,7 +10,7 @@ Full pedagogical rules (chain-linking, slot structure) live in
 
 | Wk | Topic | Deck | Format |
 |---|---|---|---|
-| 1 | Introduction | `slides/week01-introduction.md` | Full |
+| 1 | Introduction | `slides/week01-introduction.md` | Orientation (course contract only) |
 | 2 | Performance & Cost | `slides/week02-performance-and-cost.md` | Full |
 | 3 | Data Representation | `slides/week03-data-representation.md` | Full |
 | 4 | ISA I | `slides/week04-isa-i.md` | Full — Assignment 1 due |
