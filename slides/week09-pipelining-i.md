@@ -194,10 +194,12 @@ These four jobs all exist because overlapping instructions safely is genuinely h
 
 # By the End of This Week, You Can
 
-1. Explain why overlapping instructions raises throughput, even though one instruction still takes the same time
-2. Name the stages of a classic five-stage pipeline and what each stage does
-3. Compute a pipeline's speedup for a simple program, given its instruction and stage counts
-4. Identify why overlapping instructions can produce wrong answers, without solving it yet
+<div class="cardlist">
+<div class="card"><div class="h">Throughput vs. Latency</div><div class="d">Explain why overlapping instructions raises throughput, even though one instruction still takes the same time</div></div>
+<div class="card"><div class="h">Five Pipeline Stages</div><div class="d">Name the stages of a classic five-stage pipeline and what each stage does</div></div>
+<div class="card"><div class="h">Pipeline Speedup</div><div class="d">Compute a pipeline's speedup for a simple program, given its instruction and stage counts</div></div>
+<div class="card"><div class="h">Hazard Preview</div><div class="d">Identify why overlapping instructions can produce wrong answers, without solving it yet</div></div>
+</div>
 
 ---
 

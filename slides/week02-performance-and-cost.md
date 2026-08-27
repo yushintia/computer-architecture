@@ -157,10 +157,12 @@ A number turns a guess into a decision you can defend.
 
 # By the End of This Week, You Can
 
-1. Compute CPU time from instruction count, CPI, and clock rate
-2. Explain why the same clock rate does not guarantee the same speed
-3. Apply Amdahl's Law to predict the limit of a speedup
-4. Compare two machines by performance per dollar, not price alone
+<div class="cardlist">
+<div class="card"><div class="h">CPU Time</div><div class="d">Compute CPU time from instruction count, CPI, and clock rate</div></div>
+<div class="card"><div class="h">Clock Rate</div><div class="d">Explain why the same clock rate does not guarantee the same speed</div></div>
+<div class="card"><div class="h">Amdahl's Law</div><div class="d">Apply Amdahl's Law to predict the limit of a speedup</div></div>
+<div class="card"><div class="h">Performance per Dollar</div><div class="d">Compare two machines by performance per dollar, not price alone</div></div>
+</div>
 
 ---
 

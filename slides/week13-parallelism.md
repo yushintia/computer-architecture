@@ -181,10 +181,12 @@ Not knowing where parallelism helps costs you, at whatever scale you work.
 
 # By the End of This Week, You Can
 
-1. Name the main kinds of parallelism used in real chips today
-2. Explain why adding more cores does not always mean proportionally faster
-3. Compute a task's expected speedup from its serial and parallel parts
-4. Identify which parts of a real task can, and cannot, be split across workers
+<div class="cardlist">
+<div class="card"><div class="h">Kinds of Parallelism</div><div class="d">Name the main kinds of parallelism used in real chips today</div></div>
+<div class="card"><div class="h">Diminishing Returns</div><div class="d">Explain why adding more cores does not always mean proportionally faster</div></div>
+<div class="card"><div class="h">Expected Speedup</div><div class="d">Compute a task's expected speedup from its serial and parallel parts</div></div>
+<div class="card"><div class="h">Splittable Work</div><div class="d">Identify which parts of a real task can, and cannot, be split across workers</div></div>
+</div>
 
 ---
 
@@ -231,10 +233,12 @@ laptop needed.
 
 <div class="thread">You just felt the pain. Now: who else felt it, and what did the field do?</div>
 
-- **1966:** Michael Flynn sorts computer designs by how many instruction and data streams they handle at once
-- **~2004:** chip speed hits the power wall (Week 1). Chipmakers stop chasing one faster core and start shipping two, four, then many cores per chip
-- **2004:** Google publishes MapReduce, showing thousands of ordinary machines can cooperate on one huge job
-- **2007:** NVIDIA opens GPUs, built for repetitive graphics math, to general-purpose programs
+<div class="cardlist">
+<div class="card"><div class="h">1966</div><div class="d">Michael Flynn sorts computer designs by how many instruction and data streams they handle at once</div></div>
+<div class="card"><div class="h">~2004</div><div class="d">chip speed hits the power wall (Week 1). Chipmakers stop chasing one faster core and start shipping two, four, then many cores per chip</div></div>
+<div class="card"><div class="h">2004</div><div class="d">Google publishes MapReduce, showing thousands of ordinary machines can cooperate on one huge job</div></div>
+<div class="card"><div class="h">2007</div><div class="d">NVIDIA opens GPUs, built for repetitive graphics math, to general-purpose programs</div></div>
+</div>
 
 <div class="why">
 Four different moments, one shared answer: if one worker cannot go

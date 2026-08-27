@@ -169,10 +169,12 @@ week's instructions alone cannot do any of them.
 
 # By the End of This Week, You Can
 
-1. Explain what load and store instructions do, and why we need them
-2. Explain how branch and jump instructions build a decision or a loop
-3. Read a short assembly program that uses the complete instruction set
-4. Trace SmartPick's "find this exact price" program, instruction by instruction
+<div class="cardlist">
+<div class="card"><div class="h">Load & Store</div><div class="d">Explain what load and store instructions do, and why we need them</div></div>
+<div class="card"><div class="h">Branch & Jump</div><div class="d">Explain how branch and jump instructions build a decision or a loop</div></div>
+<div class="card"><div class="h">Full Programs</div><div class="d">Read a short assembly program that uses the complete instruction set</div></div>
+<div class="card"><div class="h">Tracing SmartPick</div><div class="d">Trace SmartPick's "find this exact price" program, instruction by instruction</div></div>
+</div>
 
 ---
 

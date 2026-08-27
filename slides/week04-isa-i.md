@@ -236,10 +236,12 @@ it, so old software kept running unchanged. x86-64 won the market.
 
 # By the End of This Week, You Can
 
-1. Define an ISA and explain what problem it solves
-2. Identify the two parts of one instruction: opcode and operands
-3. Read and write a simple add or subtract instruction using register names
-4. Identify the fields of an R-type instruction, and encode one by hand
+<div class="cardlist">
+<div class="card"><div class="h">ISA Basics</div><div class="d">Define an ISA and explain what problem it solves</div></div>
+<div class="card"><div class="h">Opcode & Operands</div><div class="d">Identify the two parts of one instruction: opcode and operands</div></div>
+<div class="card"><div class="h">Basic Instructions</div><div class="d">Read and write a simple add or subtract instruction using register names</div></div>
+<div class="card"><div class="h">R-Type Encoding</div><div class="d">Identify the fields of an R-type instruction, and encode one by hand</div></div>
+</div>
 
 ---
 
@@ -551,10 +553,12 @@ Cold-call 2-3 pairs to share an answer before moving on.
 
 # Common Mistakes
 
-- **"The opcode alone is the whole instruction":** the operand fields matter just as much. The same opcode with different operands does completely different work
-- **"add and sub must use different opcodes, since they do different jobs":** many R-type instructions actually share one opcode. A different field tells them apart, revealed in Week 6
-- **"The ISA changes often, like an app update":** it does not. ISAs stay fixed for years, so old software keeps running on new hardware
-- **"A register's number and its stored value are the same thing":** `$t0` is just a label for a storage spot. The number stored inside it can be anything
+<div class="cardlist">
+<div class="card"><div class="h">"The opcode alone is the whole instruction"</div><div class="d">the operand fields matter just as much. The same opcode with different operands does completely different work</div></div>
+<div class="card"><div class="h">"add and sub must use different opcodes, since they do different jobs"</div><div class="d">many R-type instructions actually share one opcode. A different field tells them apart, revealed in Week 6</div></div>
+<div class="card"><div class="h">"The ISA changes often, like an app update"</div><div class="d">it does not. ISAs stay fixed for years, so old software keeps running on new hardware</div></div>
+<div class="card"><div class="h">"A register's number and its stored value are the same thing"</div><div class="d"><code>$t0</code> is just a label for a storage spot. The number stored inside it can be anything</div></div>
+</div>
 
 ---
 

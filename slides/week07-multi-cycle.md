@@ -185,10 +185,12 @@ The same wasted tick, multiplied by every chip a company ships.
 
 # By the End of This Week, You Can
 
-1. Explain why last week's chip forces every instruction to wait for the slowest one
-2. Describe how a multi-cycle chip splits one instruction into several short steps
-3. Explain how a control unit decides which step runs next, for each instruction type
-4. Compare single-cycle and multi-cycle total run time for a small program
+<div class="cardlist">
+<div class="card"><div class="h">Slowest-Instruction Limit</div><div class="d">Explain why last week's chip forces every instruction to wait for the slowest one</div></div>
+<div class="card"><div class="h">Multi-Cycle Steps</div><div class="d">Describe how a multi-cycle chip splits one instruction into several short steps</div></div>
+<div class="card"><div class="h">Control Unit</div><div class="d">Explain how a control unit decides which step runs next, for each instruction type</div></div>
+<div class="card"><div class="h">Run Time Comparison</div><div class="d">Compare single-cycle and multi-cycle total run time for a small program</div></div>
+</div>
 
 ---
 
@@ -483,10 +485,12 @@ time, on both designs.
 
 # Common Mistakes
 
-- **"More cycles per instruction always means slower":** wrong — each cycle is much shorter, so total real time usually drops
-- **"Every instruction now takes the same number of steps":** wrong — that was last week's problem. The whole point is that they differ
-- **"The control unit is just a fixed table":** it is more like a small program. Its next step depends on the instruction type and the step before it
-- **"Multi-cycle already overlaps instructions":** wrong — it still finishes one instruction fully, step by step, before the next one starts
+<div class="cardlist">
+<div class="card"><div class="h">"More cycles per instruction always means slower"</div><div class="d">wrong — each cycle is much shorter, so total real time usually drops</div></div>
+<div class="card"><div class="h">"Every instruction now takes the same number of steps"</div><div class="d">wrong — that was last week's problem. The whole point is that they differ</div></div>
+<div class="card"><div class="h">"The control unit is just a fixed table"</div><div class="d">it is more like a small program. Its next step depends on the instruction type and the step before it</div></div>
+<div class="card"><div class="h">"Multi-cycle already overlaps instructions"</div><div class="d">wrong — it still finishes one instruction fully, step by step, before the next one starts</div></div>
+</div>
 
 ---
 

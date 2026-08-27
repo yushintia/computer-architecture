@@ -185,10 +185,12 @@ store simply did not fit. The rocket was destroyed 37 seconds after launch.
 
 # By the End of This Week, You Can
 
-1. Convert whole numbers between decimal, binary, and hexadecimal
-2. Write a negative number as an 8-bit two's complement pattern
-3. Explain what overflow is, and why it happens
-4. Explain how a computer stores a text character as a number
+<div class="cardlist">
+<div class="card"><div class="h">Number Bases</div><div class="d">Convert whole numbers between decimal, binary, and hexadecimal</div></div>
+<div class="card"><div class="h">Two's Complement</div><div class="d">Write a negative number as an 8-bit two's complement pattern</div></div>
+<div class="card"><div class="h">Overflow</div><div class="d">Explain what overflow is, and why it happens</div></div>
+<div class="card"><div class="h">Text Encoding</div><div class="d">Explain how a computer stores a text character as a number</div></div>
+</div>
 
 ---
 

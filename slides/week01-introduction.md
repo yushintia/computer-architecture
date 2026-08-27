@@ -152,15 +152,22 @@ back to one question: what makes a real computer fast or slow?
 
 By the end of this course, you can:
 
-1. Explain how a line of code becomes work a physical chip performs.
-2. Compute and compare CPU performance using CPU time, CPI, and
-   Amdahl's Law.
-3. Represent numbers, text, and instructions as bits.
-4. Read and write basic assembly instructions.
-5. Explain how a single-cycle and a multi-cycle processor design work.
-6. Explain how pipelining speeds up a processor, and what can go wrong.
-7. Explain how cache, virtual memory, and parallelism make a modern
-   machine fast.
+<style scoped>
+.cardlist { gap: 10px; margin-top: 6px; }
+.cardlist .card { padding: 8px 18px; }
+.cardlist .card .h { font-size: 17px; margin-bottom: 2px; }
+.cardlist .card .d { font-size: 15px; line-height: 1.25; }
+</style>
+
+<div class="cardlist">
+<div class="card"><div class="h">Code to Hardware</div><div class="d">Explain how a line of code becomes work a physical chip performs.</div></div>
+<div class="card"><div class="h">CPU Performance</div><div class="d">Compute and compare CPU performance using CPU time, CPI, and Amdahl's Law.</div></div>
+<div class="card"><div class="h">Data Representation</div><div class="d">Represent numbers, text, and instructions as bits.</div></div>
+<div class="card"><div class="h">Assembly</div><div class="d">Read and write basic assembly instructions.</div></div>
+<div class="card"><div class="h">Processor Design</div><div class="d">Explain how a single-cycle and a multi-cycle processor design work.</div></div>
+<div class="card"><div class="h">Pipelining</div><div class="d">Explain how pipelining speeds up a processor, and what can go wrong.</div></div>
+<div class="card"><div class="h">Memory &amp; Parallelism</div><div class="d">Explain how cache, virtual memory, and parallelism make a modern machine fast.</div></div>
+</div>
 
 ---
 
@@ -199,13 +206,12 @@ fast otherwise.
 Each 150-minute class is split into three 50-minute sessions (차시 1,
 2, 3). Each session mixes short lectures with:
 
-- **A warm-up** - a short, concrete question to start, before any
-  jargon
-- **A recap** - what last week delivered, and what it left unsolved
-- **Pair and group activities** - work through a problem together,
-  with the answer discussed right after
-- **A self-check quiz** - ungraded, just for you, at the end of most
-  weeks
+<div class="cardlist">
+<div class="card"><div class="h">A warm-up</div><div class="d">a short, concrete question to start, before any jargon</div></div>
+<div class="card"><div class="h">A recap</div><div class="d">what last week delivered, and what it left unsolved</div></div>
+<div class="card"><div class="h">Pair and group activities</div><div class="d">work through a problem together, with the answer discussed right after</div></div>
+<div class="card"><div class="h">A self-check quiz</div><div class="d">ungraded, just for you, at the end of most weeks</div></div>
+</div>
 
 You will talk in this class, not just listen.
 
@@ -286,14 +292,12 @@ enough for it to still matter for the next assignment or exam.
 
 <div class="thread">Concrete rules, stated once, so nobody is surprised later.</div>
 
-- **Attendance** is 10% of your grade and is recorded every session.
-- **Late arrival:** arriving within 15 minutes of the start is on-time;
-  after that, you're marked late. Three lates equal one absence.
-- **Can't attend?** Email the instructor *before* the session to be
-  marked excused - unexcused absences aren't eligible for makeup credit.
-- **Late work:** loses 10% of that assignment's grade per day late, up
-  to 3 days. No credit after 3 days, unless arranged with the
-  instructor in advance.
+<div class="cardlist">
+<div class="card"><div class="h">Attendance</div><div class="d">is 10% of your grade and is recorded every session.</div></div>
+<div class="card"><div class="h">Late arrival</div><div class="d">arriving within 15 minutes of the start is on-time; after that, you're marked late. Three lates equal one absence.</div></div>
+<div class="card"><div class="h">Can't attend?</div><div class="d">Email the instructor <em>before</em> the session to be marked excused - unexcused absences aren't eligible for makeup credit.</div></div>
+<div class="card"><div class="h">Late work</div><div class="d">loses 10% of that assignment's grade per day late, up to 3 days. No credit after 3 days, unless arranged with the instructor in advance.</div></div>
+</div>
 
 ---
 

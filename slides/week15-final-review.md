@@ -107,10 +107,12 @@ The final is worth as much as the midterm, and it covers **twice the material**.
 
 # Weeks 1-5: Measuring and Describing a Machine
 
-- **Wk 1:** three layers — ISA, microarchitecture, hardware. Same ISA can hide very different speeds
-- **Wk 2:** CPU time, clock rate, CPI, and Amdahl's Law — the tools to put a number on "faster"
-- **Wk 3:** how numbers become bits — binary, two's complement, IEEE floating point
-- **Wk 4-5:** a complete ISA — R/I/J-type formats, branches and jumps, what "add" and "load" mean as bit patterns
+<div class="cardlist">
+<div class="card"><div class="h">Wk 1</div><div class="d">three layers — ISA, microarchitecture, hardware. Same ISA can hide very different speeds</div></div>
+<div class="card"><div class="h">Wk 2</div><div class="d">CPU time, clock rate, CPI, and Amdahl's Law — the tools to put a number on "faster"</div></div>
+<div class="card"><div class="h">Wk 3</div><div class="d">how numbers become bits — binary, two's complement, IEEE floating point</div></div>
+<div class="card"><div class="h">Wk 4-5</div><div class="d">a complete ISA — R/I/J-type formats, branches and jumps, what "add" and "load" mean as bit patterns</div></div>
+</div>
 
 These five weeks gave us words and numbers for any machine, before opening the box.
 
@@ -118,10 +120,12 @@ These five weeks gave us words and numbers for any machine, before opening the b
 
 # Weeks 6-10: Building and Speeding Up a Datapath
 
-- **Wk 6:** single-cycle datapath — every instruction takes exactly one clock cycle
-- **Wk 7:** multi-cycle — shorter cycles, but more control states to track
-- **Wk 9:** pipelining — overlap instructions for speed, but hazards can break correctness
-- **Wk 10:** hazard fixes — forwarding, stalling, and branch prediction
+<div class="cardlist">
+<div class="card"><div class="h">Wk 6</div><div class="d">single-cycle datapath — every instruction takes exactly one clock cycle</div></div>
+<div class="card"><div class="h">Wk 7</div><div class="d">multi-cycle — shorter cycles, but more control states to track</div></div>
+<div class="card"><div class="h">Wk 9</div><div class="d">pipelining — overlap instructions for speed, but hazards can break correctness</div></div>
+<div class="card"><div class="h">Wk 10</div><div class="d">hazard fixes — forwarding, stalling, and branch prediction</div></div>
+</div>
 
 Same instruction set, three different builds, each one faster and more fragile than the last.
 
@@ -129,10 +133,12 @@ Same instruction set, three different builds, each one faster and more fragile t
 
 # Weeks 11-14: Memory, Parallel Scale, and Real Designs
 
-- **Wk 11:** cache — hit, miss, and Average Memory Access Time (AMAT)
-- **Wk 12:** virtual memory — paging, the TLB, and what a page fault does
-- **Wk 13:** parallelism — multicore, SIMD, Amdahl's Law again, and cache coherence
-- **Wk 14:** a real processor design, seen through every layer above
+<div class="cardlist">
+<div class="card"><div class="h">Wk 11</div><div class="d">cache — hit, miss, and Average Memory Access Time (AMAT)</div></div>
+<div class="card"><div class="h">Wk 12</div><div class="d">virtual memory — paging, the TLB, and what a page fault does</div></div>
+<div class="card"><div class="h">Wk 13</div><div class="d">parallelism — multicore, SIMD, Amdahl's Law again, and cache coherence</div></div>
+<div class="card"><div class="h">Wk 14</div><div class="d">a real processor design, seen through every layer above</div></div>
+</div>
 
 A fast pipeline is wasted if memory can't feed it or if only one core does the work.
 

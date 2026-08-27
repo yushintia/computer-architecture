@@ -152,10 +152,12 @@ a real circuit built underneath it.
 
 # By the End of This Week, You Can
 
-1. Identify the datapath parts needed to run an instruction
-2. Trace how one instruction flows through the datapath, step by step
-3. Explain how control signals choose the right path for each instruction type
-4. Explain why a single-cycle design wastes time on simple instructions
+<div class="cardlist">
+<div class="card"><div class="h">Datapath Parts</div><div class="d">Identify the datapath parts needed to run an instruction</div></div>
+<div class="card"><div class="h">Instruction Flow</div><div class="d">Trace how one instruction flows through the datapath, step by step</div></div>
+<div class="card"><div class="h">Control Signals</div><div class="d">Explain how control signals choose the right path for each instruction type</div></div>
+<div class="card"><div class="h">Single-Cycle Waste</div><div class="d">Explain why a single-cycle design wastes time on simple instructions</div></div>
+</div>
 
 ---
 
@@ -486,10 +488,12 @@ the top). Let pairs self-check, then work the timing numbers. Cold-call
 
 Instruction: `add $t0, $t1, $t2`, where `$t1` holds 5 and `$t2` holds 7.
 
-1. **Fetch:** PC points to this instruction in instruction memory
-2. **Decode:** register file reads `$t1` = 5 and `$t2` = 7
-3. **Execute:** the ALU adds them, producing 12
-4. **Write Back:** 12 is stored into `$t0`
+<div class="cardlist">
+<div class="card"><div class="h">Fetch</div><div class="d">PC points to this instruction in instruction memory</div></div>
+<div class="card"><div class="h">Decode</div><div class="d">register file reads <code>$t1</code> = 5 and <code>$t2</code> = 7</div></div>
+<div class="card"><div class="h">Execute</div><div class="d">the ALU adds them, producing 12</div></div>
+<div class="card"><div class="h">Write Back</div><div class="d">12 is stored into <code>$t0</code></div></div>
+</div>
 
 Control signals for this instruction: RegWrite = on, MemRead = off,
 MemWrite = off, Branch = off.

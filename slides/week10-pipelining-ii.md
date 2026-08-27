@@ -144,10 +144,12 @@ handled by design.
 
 These four skills turn last week's broken pipeline into a trustworthy one.
 
-1. Identify data hazards and control hazards in a running program
-2. Explain how forwarding fixes most data hazards without losing speed
-3. Explain why one specific case still needs a stall, even with forwarding
-4. Explain how branch prediction and flushing handle control hazards
+<div class="cardlist">
+<div class="card"><div class="h">Data & Control Hazards</div><div class="d">Identify data hazards and control hazards in a running program</div></div>
+<div class="card"><div class="h">Forwarding</div><div class="d">Explain how forwarding fixes most data hazards without losing speed</div></div>
+<div class="card"><div class="h">Stalls</div><div class="d">Explain why one specific case still needs a stall, even with forwarding</div></div>
+<div class="card"><div class="h">Branch Prediction</div><div class="d">Explain how branch prediction and flushing handle control hazards</div></div>
+</div>
 
 ---
 
@@ -517,10 +519,12 @@ pipeline both fast and correct, most of the time at full speed.
 
 # Common Mistakes
 
-- **"Just always stall to be safe":** correct, but wastes speed on nearly every instruction. Defeats the reason pipelining exists
-- **"Forwarding fixes every data hazard":** it does not. The load-use case still needs one stall cycle
-- **"A wrong branch guess is a bug":** it is expected sometimes. Flushing is the planned fix, not an error
-- **"More pipeline stages are always better":** deeper pipelines also pay a bigger penalty for every wrong guess
+<div class="cardlist">
+<div class="card"><div class="h">"Just always stall to be safe"</div><div class="d">correct, but wastes speed on nearly every instruction. Defeats the reason pipelining exists</div></div>
+<div class="card"><div class="h">"Forwarding fixes every data hazard"</div><div class="d">it does not. The load-use case still needs one stall cycle</div></div>
+<div class="card"><div class="h">"A wrong branch guess is a bug"</div><div class="d">it is expected sometimes. Flushing is the planned fix, not an error</div></div>
+<div class="card"><div class="h">"More pipeline stages are always better"</div><div class="d">deeper pipelines also pay a bigger penalty for every wrong guess</div></div>
+</div>
 
 ---
 

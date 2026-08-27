@@ -77,14 +77,12 @@ system, and point at exactly where its parallelism lives.
 
 # What to Present
 
-1. **Pick one real, current chip or system:** a phone chip, a laptop
-   chip, a GPU, a game console, a cloud server
-2. **Name its parallel techniques:** pipelining, superscalar, multicore,
-   SIMD, multithreading, or GPU-style parallel execution
-3. **Point to evidence:** a spec sheet, a die photo, or a benchmark that
-   shows the technique is really there
-4. **Say why it matters:** what a user actually gains, speed, battery
-   life, or lower cost
+<div class="cardlist">
+<div class="card"><div class="h">Pick one real, current chip or system</div><div class="d">a phone chip, a laptop chip, a GPU, a game console, a cloud server</div></div>
+<div class="card"><div class="h">Name its parallel techniques</div><div class="d">pipelining, superscalar, multicore, SIMD, multithreading, or GPU-style parallel execution</div></div>
+<div class="card"><div class="h">Point to evidence</div><div class="d">a spec sheet, a die photo, or a benchmark that shows the technique is really there</div></div>
+<div class="card"><div class="h">Say why it matters</div><div class="d">what a user actually gains, speed, battery life, or lower cost</div></div>
+</div>
 
 <div class="why">
 Use this semester's words on purpose: ISA, microarchitecture, pipeline,

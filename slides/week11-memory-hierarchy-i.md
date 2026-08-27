@@ -162,10 +162,12 @@ The same gap, at three different sizes. Memory speed is not a small detail.
 
 # By the End of This Week, You Can
 
-1. Explain why memory speed limits real performance, even with a perfect pipeline
-2. Describe the memory hierarchy and why it is built in layers
-3. Explain how a cache decides between a hit and a miss
-4. Compute a simple average memory access time (AMAT)
+<div class="cardlist">
+<div class="card"><div class="h">Memory Speed Limit</div><div class="d">Explain why memory speed limits real performance, even with a perfect pipeline</div></div>
+<div class="card"><div class="h">Memory Hierarchy</div><div class="d">Describe the memory hierarchy and why it is built in layers</div></div>
+<div class="card"><div class="h">Hit vs. Miss</div><div class="d">Explain how a cache decides between a hit and a miss</div></div>
+<div class="card"><div class="h">AMAT</div><div class="d">Compute a simple average memory access time (AMAT)</div></div>
+</div>
 
 ---
 

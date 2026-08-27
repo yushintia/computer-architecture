@@ -178,10 +178,12 @@ scale you work at.
 
 # By the End of This Week, You Can
 
-1. Explain why a program can need more memory than the machine physically has
-2. Describe how virtual memory turns a program's addresses into real memory locations
-3. Explain what happens, step by step, when a needed page is not in RAM
-4. Explain how virtual memory keeps separate programs from touching each other's memory
+<div class="cardlist">
+<div class="card"><div class="h">Memory Shortfall</div><div class="d">Explain why a program can need more memory than the machine physically has</div></div>
+<div class="card"><div class="h">Address Translation</div><div class="d">Describe how virtual memory turns a program's addresses into real memory locations</div></div>
+<div class="card"><div class="h">Page Faults</div><div class="d">Explain what happens, step by step, when a needed page is not in RAM</div></div>
+<div class="card"><div class="h">Memory Protection</div><div class="d">Explain how virtual memory keeps separate programs from touching each other's memory</div></div>
+</div>
 
 ---
 
