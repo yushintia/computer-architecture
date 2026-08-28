@@ -1,7 +1,7 @@
 # Outline: Computer Architecture (503872-004)
 
 DEU 2026-2, Thu 4-6교시 (3x50 min), 성파 702, 3rd-year, 지능형컴퓨팅학과.
-Instructor: Yushintia Pramitarini. Prereqs: Digital Logic, Computer
+Professor: Yushintia Pramitarini. Prereqs: Digital Logic, Computer
 Programming, Data Structure. Texts: Hennessy & Patterson; Stallings;
 Bryant & O'Hallaron.
 

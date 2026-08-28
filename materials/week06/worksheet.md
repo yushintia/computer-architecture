@@ -2,7 +2,7 @@
 
 Computer Architecture (503872-004). Work with your pair. Write short
 answers — full sentences are not required, but write enough that your
-partner and the instructor can follow your thinking.
+partner and the professor can follow your thinking.
 
 **Pair names:** ___________________________ / ___________________________
 
@@ -50,7 +50,7 @@ one.
 
 ## Part B (do this in 차시 3, about 15 minutes)
 
-Your instructor will hand this out after the class discussion of Part A.
+Your professor will hand this out after the class discussion of Part A.
 It starts with the real answer, then asks you to compute real timing
 numbers.
 
@@ -97,7 +97,7 @@ every cycle, using the same clock cycle length as B4?
 ---
 ---
 
-# Instructor Answer Key — do not hand out this section
+# Professor Answer Key — do not hand out this section
 
 ## Part A — what to listen for
 
@@ -120,6 +120,6 @@ is to surface reasoning, not to get it right yet. Common good answers:
 
 ## Facilitation notes
 
-- Total time: Part A ~15 min (prediction only, no reveal), short instructor-led discussion, Part B ~15 min (reveal + compute)
+- Total time: Part A ~15 min (prediction only, no reveal), short professor-led discussion, Part B ~15 min (reveal + compute)
 - Do not let Part A run long — the value is in predicting under uncertainty, not in getting the "right" answer
 - If a pair finishes Part B early, point them to the handout's "Optional Reading" section, especially "why two adders, not one"

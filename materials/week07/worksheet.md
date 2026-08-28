@@ -2,7 +2,7 @@
 
 Computer Architecture (503872-004). Work with your pair. Write short
 answers — full sentences are not required, but write enough that your
-partner and the instructor can follow your thinking.
+partner and the professor can follow your thinking.
 
 **Pair names:** ___________________________ / ___________________________
 
@@ -49,7 +49,7 @@ steps to **most** total steps.
 
 ## Part B (do this in 차시 3, about 15 minutes)
 
-Your instructor will hand this out after the class discussion of Part A.
+Your professor will hand this out after the class discussion of Part A.
 It starts with the real step counts, then asks you to explain them.
 
 **The real step counts:** `add` = 4 steps, `sw` = 4 steps, `beq` = 3
@@ -92,7 +92,7 @@ same time? Why or why not?
 ---
 ---
 
-# Instructor Answer Key — do not hand out this section
+# Professor Answer Key — do not hand out this section
 
 ## Part A — what to listen for
 
@@ -113,6 +113,6 @@ same time? Why or why not?
 
 ## Facilitation notes
 
-- Total time: Part A ~15 min (step-tracing and prediction only, no reveal), short instructor-led discussion, Part B ~15 min (reveal + compute + explain)
+- Total time: Part A ~15 min (step-tracing and prediction only, no reveal), short professor-led discussion, Part B ~15 min (reveal + compute + explain)
 - Do not let Part A run long — the value is in reasoning about which steps each instruction needs, not in getting the ranking perfectly right
 - If a pair finishes Part B early, point them to the handout's "Optional Reading" section, and to Practice Problem 5 for extra computation practice

@@ -433,7 +433,7 @@ this tight today, Quiz 1 follows shortly.
 15 minutes.
 </div>
 
-- Put away notes and laptops when your instructor says start
+- Put away notes and laptops when your professor says start
 - We resume the slides right after
 
 ---

@@ -2,7 +2,7 @@
 
 Computer Architecture (503872-004). Work with your pair. Write short
 answers — full sentences are not required, but write enough that your
-partner and the instructor can follow your thinking.
+partner and the professor can follow your thinking.
 
 **Pair names:** ___________________________ / ___________________________
 
@@ -68,7 +68,7 @@ of which instruction?
 
 ## Part B (do this in 차시 3, about 15 minutes)
 
-Your instructor will hand this out after the class discussion of Part A.
+Your professor will hand this out after the class discussion of Part A.
 It starts with the Part A answer key, then asks you to trace a branch.
 
 ### Part A answer key
@@ -129,7 +129,7 @@ does that make deep pipelines riskier, not just longer?
 ---
 ---
 
-# Instructor Answer Key — do not hand out this section
+# Professor Answer Key — do not hand out this section
 
 ## Part A — what to listen for
 
@@ -170,7 +170,7 @@ does that make deep pipelines riskier, not just longer?
 ## Facilitation notes
 
 - Total time: Part A ~15 min (trace and predict, no reveal), short
-  instructor-led discussion, Part B ~15 min (reveal + branch trace)
+  professor-led discussion, Part B ~15 min (reveal + branch trace)
 - Do not let Part A run long — the goal is spotting the hazard pattern,
   not perfect wording
 - If a pair finishes Part B early, point them to the handout's "Optional

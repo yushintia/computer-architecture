@@ -2,7 +2,7 @@
 
 Computer Architecture (503872-004). Work with your pair. Write short
 answers — full sentences are not required, but write enough that your
-partner and the instructor can follow your thinking.
+partner and the professor can follow your thinking.
 
 **Pair names:** ___________________________ / ___________________________
 
@@ -50,7 +50,7 @@ finish faster than it would running alone? Circle one, then explain.
 
 ## Part B (do this in 차시 3, about 15 minutes)
 
-Your instructor will hand this out after the class discussion of Part A.
+Your professor will hand this out after the class discussion of Part A.
 It starts with the real tick counts, then asks you to explain them.
 
 **The real tick counts:** one at a time = 4 × 5 = **20 ticks**.
@@ -92,7 +92,7 @@ what you know so far?
 ---
 ---
 
-# Instructor Answer Key — do not hand out this section
+# Professor Answer Key — do not hand out this section
 
 ## Part A — what to listen for
 
@@ -129,7 +129,7 @@ the point is to surface reasoning, not to get it right yet.
 ## Facilitation notes
 
 - Total time: Part A ~15 min (tick-counting and prediction only, no
-  reveal), short instructor-led discussion, Part B ~15 min (reveal +
+  reveal), short professor-led discussion, Part B ~15 min (reveal +
   compute + explain)
 - Do not let Part A run long — the value is in reasoning about overlap,
   not in getting the numbers perfectly right on the first try

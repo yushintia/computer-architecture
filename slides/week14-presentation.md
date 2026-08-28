@@ -101,7 +101,7 @@ cache, core, throughput. This is graded, see the rubric ahead.
 | Teams 1-4 | ~48 min | 12 min each |
 | Break | 5 min | Stretch, reset the room |
 | Teams 5-8 | ~48 min | 12 min each |
-| Wrap-up | ~5 min | Instructor closes remaining gaps |
+| Wrap-up | ~5 min | Professor closes remaining gaps |
 
 Arrive on time. A missed slot cannot be rescheduled during class.
 
@@ -196,7 +196,7 @@ once, for one real chip, with real evidence.
 # Next Week: Final Exam
 
 Week 15 is a **short review week**, covering Weeks 1 through 14, no new
-material. Format: instructor-led review, then the final exam itself.
+material. Format: professor-led review, then the final exam itself.
 
 <div class="why">
 <strong>Prepare:</strong> re-read every week's Summary slide. Bring the

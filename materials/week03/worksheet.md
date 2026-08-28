@@ -2,7 +2,7 @@
 
 Computer Architecture (503872-004). Work with your pair. Write short
 answers — full sentences are not required, but write enough that your
-partner and the instructor can follow your thinking.
+partner and the professor can follow your thinking.
 
 **Pair names:** ___________________________ / ___________________________
 
@@ -44,7 +44,7 @@ still not sure about?
 
 ## Part B (do this in 차시 3, about 15 minutes)
 
-Your instructor will hand this out after the class discussion of Part A.
+Your professor will hand this out after the class discussion of Part A.
 It starts with the real answer to A4, then asks you to explain it.
 
 **The real answer to A4:** Yes. The byte `11111011` is 251 read as
@@ -83,7 +83,7 @@ What might go wrong when a refund needs to show a negative amount?
 ---
 ---
 
-# Instructor Answer Key — do not hand out this section
+# Professor Answer Key — do not hand out this section
 
 ## Part A — what to listen for
 
@@ -103,6 +103,6 @@ What might go wrong when a refund needs to show a negative amount?
 
 ## Facilitation notes
 
-- Total time: Part A ~15 min (prediction only, no reveal), short instructor-led discussion, Part B ~15 min (reveal + explain)
+- Total time: Part A ~15 min (prediction only, no reveal), short professor-led discussion, Part B ~15 min (reveal + explain)
 - Do not let Part A run long — the value is in predicting under uncertainty, not in getting the "right" answer
 - If a pair finishes Part B early, point them to the handout's "Optional Reading" section

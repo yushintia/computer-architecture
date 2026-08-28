@@ -24,7 +24,7 @@ every full-spine week. Act 3 (Build) expands or contracts to fit the topic.
 
 | # | Slide | Rule |
 |---|---|---|
-| 1 | Title | Week #, topic, course code, instructor, date |
+| 1 | Title | Week #, topic, course code, professor, date |
 | 2 | Where we are | Shared roadmap graphic (`_shared/roadmap.md`), current week highlighted |
 | 3 | Recap + open wound | One sentence on what last week delivered, one sentence on what it left broken |
 
@@ -82,7 +82,7 @@ the pain slide (4) is too abstract, so fix it instead of breaking the rule.
 | 11 | Memory Hierarchy I | Caching speeds up memory, but only for programs and datasets that fit -> **W12** |
 | 12 | Memory Hierarchy II | Virtual memory solves capacity, but a single core is still the whole story -> **W13** |
 | 13 | Parallelism · Quiz 2 | We can name parallel techniques, but not yet see them working in a real, current design -> **W14** |
-| 14 | Presentation | Students present a real design; instructor closes remaining gaps -> **W15** |
+| 14 | Presentation | Students present a real design; professor closes remaining gaps -> **W15** |
 | 15 | Final Exam | review only, no chain link |
 
 Weeks 8 and 15 use the **short review variant**: Act 0 (slots 1-3) + Act 3

@@ -2,7 +2,7 @@
 
 Computer Architecture (503872-004). Work with your pair. Write short
 answers — full sentences are not required, but write enough that your
-partner and the instructor can follow your thinking. Formula reminder:
+partner and the professor can follow your thinking. Formula reminder:
 
 > **Speedup(N) = 1 / (S + P / N)**, where S is the serial fraction, P is
 > the parallel fraction, S + P = 1, and N is the number of workers.
@@ -52,7 +52,7 @@ one real-world cost it ignores.
 
 ## Part B (do this in 차시 3, about 15 minutes)
 
-Your instructor will hand this out after the class discussion of Part A.
+Your professor will hand this out after the class discussion of Part A.
 It reveals the full table, then asks you to explain it.
 
 **The real numbers**, for S = 0.10, P = 0.90:
@@ -96,7 +96,7 @@ What might the simple formula be leaving out?
 ---
 ---
 
-# Instructor Answer Key — do not hand out this section
+# Professor Answer Key — do not hand out this section
 
 ## Part A — what to listen for
 
@@ -135,7 +135,7 @@ What might the simple formula be leaving out?
 ## Facilitation notes
 
 - Total time: Part A ~15 min (prediction + first computation, no full
-  reveal), short instructor-led discussion, Part B ~15 min (reveal +
+  reveal), short professor-led discussion, Part B ~15 min (reveal +
   explain)
 - Encourage pairs to actually do the A2 arithmetic; walking around to
   check for the 0.325 denominator catches most calculation slips early

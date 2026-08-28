@@ -109,12 +109,12 @@ enough for it to still matter for the next assignment or exam.
 - **Late arrival:** arriving within 15 minutes of the start is
   on-time; after that, you're marked late. Three lates equal one
   absence.
-- **Can't attend?** Email the instructor *before* the session to be
+- **Can't attend?** Email the professor *before* the session to be
   marked excused — unexcused absences aren't eligible for makeup
   credit.
 - **Late work:** loses 10% of that assignment's grade per day late, up
   to 3 days. No credit after 3 days, unless arranged with the
-  instructor in advance.
+  professor in advance.
 
 ## 11. Academic Integrity
 
@@ -136,7 +136,7 @@ enough for it to still matter for the next assignment or exam.
   provided in advance, enlarged exam copies, or other reasonable
   accommodation based on need
 
-Contact the instructor early, and the Disability Student Support
+Contact the professor early, and the Disability Student Support
 Center or Academic Affairs Team, so accommodations are ready before
 you need them.
 
@@ -144,7 +144,7 @@ you need them.
 
 - **Email:** yushintia@deu.ac.kr
 - **Office hours:** by appointment, email first
-- Email is the fastest way to reach the instructor outside of class.
+- Email is the fastest way to reach the professor outside of class.
 
 ## 14. The SmartPick Story (Preview, Not Explained Yet)
 

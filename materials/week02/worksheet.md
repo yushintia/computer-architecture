@@ -58,7 +58,7 @@ ratio. Is Machine Q worth its higher price?
 
 ## Part B (do this in 차시 3, about 15 minutes)
 
-Your instructor will walk through Part A's answers with the class
+Your professor will walk through Part A's answers with the class
 first. Then continue below.
 
 **B1.** Did your Part A answers match the class discussion? Fix any
@@ -107,7 +107,7 @@ infinitely fast encoder?
 ---
 ---
 
-# Instructor Answer Key — do not hand out this section
+# Professor Answer Key — do not hand out this section
 
 ## Part A — model answers
 
@@ -146,7 +146,7 @@ infinitely fast encoder?
 ## Facilitation notes
 
 - Total time: Part A ~15 min (compute, no reveal yet), short
-  instructor-led walkthrough, Part B ~15 min (verify + new problems +
+  professor-led walkthrough, Part B ~15 min (verify + new problems +
   SmartPick attempt)
 - Encourage pairs to write every intermediate number (cycle time,
   instruction count, CPI) — the goal is fluency with the formula, not
